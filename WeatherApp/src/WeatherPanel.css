@@ -25,4 +25,87 @@
   border: none;
   outline: none;
   background: rgb(151, 21, 86);
+  cursor: pointer;
+  font-size: 0.7em;
+  transition: 0.4s;
+}
+
+.submit img {
+  width: 45px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.submit:hover {
+  background: #fff !important;
+  color: #000;
+}
+
+.search {
+  background: none;
+  border: none;
+  border-bottom: 1px #ccc solid;
+  padding: 0 1em 0.5em 0;
+  width: 80%;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  color: #ffffff;
+}
+
+.panel ul {
+  padding: 0 0 1em 0;
+  margin: 2em 0;
+  border-bottom: 1px #ccc solid;
+}
+
+.panel ul li {
+  color: #ccc;
+  margin: 2.5em 0;
+}
+
+.panel ul h4 {
+  margin: 3em 0;
+}
+
+.city {
+  display: block;
+  cursor: pointer;
+}
+
+.city:hover {
+  color: #fff;
+}
+
+.details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000) {
+  .panel,
+  .container {
+    position: relative;
+    width: 100%;
+    top: initial;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .weather-app {
+    min-height: 40em;
+  }
 }

@@ -11,7 +11,7 @@ export default function WeatherPanel() {
           placeholder="Search Location..."
         />
         <button type="submit" className="submit">
-          <i>🔎</i>
+          <img src="../src/images/buscar.png" alt="" />
         </button>
       </form>
       <ul className="cities">
